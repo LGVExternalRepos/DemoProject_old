@@ -4,7 +4,7 @@ on:
   # no push triggers
   # no pull request triggers
   schedule:
-    - cron: '20 16 * * *'
+    - cron: '50 17 * * *'
 
 jobs:
   xygeni-scan:

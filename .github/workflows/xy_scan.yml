@@ -17,11 +17,11 @@ on:
           type: choice
           description: Xygeni Env
           options: 
-          - PRO
+          - PRO_LGV
           - PRO_TRIAL
           - DEMO
           - DEMO_TRIAL
-          default: PRO
+          default: PRO_LGV
  
 env:
   
@@ -45,12 +45,12 @@ jobs:
         run: |
 
           case "$XY_ENV" in 
-            PRO)
-              echo "PRO"
-              echo XY_USERNAME=${{ secrets.XY_USERNAME_PRO }} >> $GITHUB_ENV
-              echo XY_PASSWORD=${{ secrets.XY_PASSWORD_PRO }} >> $GITHUB_ENV
+            PRO_LGV)
+              echo "PRO_LGV"
+              echo XY_USERNAME=${{ secrets.XY_USERNAME_PRO_LGV }} >> $GITHUB_ENV
+              echo XY_PASSWORD=${{ secrets.XY_PASSWORD_PRO_LGV }} >> $GITHUB_ENV
+              echo XY_TOKEN=${{ secrets.XY_TOKEN_PRO_LGV }} >> $GITHUB_ENV 
               echo XY_URL=${{ secrets.XY_URL_PRO }} >> $GITHUB_ENV
-              echo XY_TOKEN=${{ secrets.XY_TOKEN_PRO }} >> $GITHUB_ENV 
               ;;
             PRO_TRIAL)
               echo "PRO_TRIAL"

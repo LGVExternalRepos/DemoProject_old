@@ -75,10 +75,11 @@ jobs:
               ;;
             *)
               echo "DEFAULT (PRO)"
-              echo XY_USERNAME=${{ secrets.XY_USERNAME_PRO }} >> $GITHUB_ENV
-              echo XY_PASSWORD=${{ secrets.XY_PASSWORD_PRO }} >> $GITHUB_ENV
+              echo XY_USERNAME=${{ secrets.XY_USERNAME_PRO_LGV }} >> $GITHUB_ENV
+              echo XY_PASSWORD=${{ secrets.XY_PASSWORD_PRO_LGV }} >> $GITHUB_ENV
+              echo XY_TOKEN=${{ vars.XY_TOKEN_PRO_LGV }} >> $GITHUB_ENV 
               echo XY_URL=${{ secrets.XY_URL_PRO }} >> $GITHUB_ENV
-              echo XY_TOKEN=${{ secrets.XY_TOKEN_PRO }} >> $GITHUB_ENV 
+
               ;;
           esac
 

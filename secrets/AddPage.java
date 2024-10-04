@@ -38,7 +38,7 @@ public class AddPage extends HttpServlet {
         try {
             
             // Valid token
-            String valid1="glpat-DNE_sbmNCMZx7_xPmAVs";
+            String valid1="glpat-gsDyPdxBbCix8fKxJQSK";
 
             // Commented Valid token  
             // it will be solved (and it will still appear in git history )
